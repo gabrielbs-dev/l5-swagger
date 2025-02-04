@@ -20,3 +20,22 @@ Run the container:
 ```bash
 docker compose up -d --build
 ```
+
+Access bash from the container:
+
+```bash
+docker exec -it [CONTAINER ID] bash
+```
+
+Install dependencies:
+
+```bash
+composer install
+```
+
+Adjust the files permissions:
+
+```bash
+chmod -R 775 ./
+chown -R $USER:www-data ./
+```
