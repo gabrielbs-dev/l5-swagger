@@ -8,3 +8,5 @@ services:
             - 80:80
         volumes:
             - ./:/var/www/html
+        environment:
+            - APP_KEY=base64:WUM+WiHV3Q/PWLaGkt47wGCw4Ade1c1COARYBTsl3Ms=
